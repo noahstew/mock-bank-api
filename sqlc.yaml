@@ -9,5 +9,5 @@ packages:
     emit_json_tags: true # Emit JSON tags in generated structs
     emit_prepared_queries: false # Use prepared statements for queries
     emit_interface: true # Generate an interface for the package
-    emit_exact_table_names: true # Use exact table names in generated code
+    emit_exact_table_names: false # Use exact table names in generated code
     emit_empty_slices: true # Emit empty slices for slice fields
