@@ -1,0 +1,13 @@
+version: '1'
+packages:
+  - name: 'db' # Name of the package to generate
+    path: './db/sqlc' # Output directory for generated code
+    queries: './db/query/' # Directory containing SQL query files
+    schema: './db/migration/' # Directory containing SQL schema files
+    engine: 'postgresql' # Database engine type
+    # sql_package: 'database/sql' # SQL driver package
+    emit_json_tags: true # Emit JSON tags in generated structs
+    emit_prepared_queries: false # Use prepared statements for queries
+    emit_interface: true # Generate an interface for the package
+    emit_exact_table_names: true # Use exact table names in generated code
+    emit_empty_slices: true # Emit empty slices for slice fields
