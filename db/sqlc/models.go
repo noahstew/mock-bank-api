@@ -7,11 +7,11 @@ import (
 )
 
 type Accounts struct {
-	ID       int64        `json:"id"`
-	Owner    string       `json:"owner"`
-	Balance  int64        `json:"balance"`
-	Currency string       `json:"currency"`
-	CreateAt sql.NullTime `json:"create_at"`
+	ID        int64        `json:"id"`
+	Owner     string       `json:"owner"`
+	Balance   int64        `json:"balance"`
+	Currency  string       `json:"currency"`
+	CreatedAt sql.NullTime `json:"created_at"`
 }
 
 type Entries struct {

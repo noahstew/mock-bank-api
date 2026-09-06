@@ -3,7 +3,7 @@ CREATE TABLE "accounts" (
   "owner" varchar NOT NULL,
   "balance" bigint NOT NULL,
   "currency" varchar NOT NULL,
-  "create_at" timestamptz DEFAULT (now())
+  "created_at" timestamptz DEFAULT (now())
 );
 
 CREATE TABLE "entries" (
