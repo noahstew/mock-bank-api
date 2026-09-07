@@ -17,7 +17,7 @@ INSERT INTO entries (
 `
 
 type CreateEntryParams struct {
-	AccountID int64         `json:"account_id"`
+	AccountID int64 `json:"account_id"`
 	Amount    int64 `json:"amount"`
 }
 
