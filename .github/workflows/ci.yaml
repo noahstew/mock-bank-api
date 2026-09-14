@@ -32,8 +32,12 @@ jobs:
         with:
           go-version: ^1.26
         id: go
+
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
+
+      - name: Set up config
+        run: cp .env.example app.env
 
       - name: Install golang-migrate
         run: |
