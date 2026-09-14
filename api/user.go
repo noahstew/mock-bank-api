@@ -80,7 +80,7 @@ type loginUserRequest struct {
 
 type loginUserResponse struct {
 	AccessToken          string       `json:"access_token"`
-	User userResponse `json"user"`
+	User userResponse `json:"user"`
 }
 
 func (server *Server) loginUser(ctx *gin.Context) {
