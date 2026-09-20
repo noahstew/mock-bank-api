@@ -128,6 +128,7 @@ func (server *Server) loginUser(ctx *gin.Context) {
 	session, err := server.store.CreateSession(ctx, db.CreateSessionParams{
 		ID: refreshPayload.ID,
 		Username: user.Username,
+		RefreshToken: refreshToken,
 		UserAgent: ctx.Request.UserAgent(),
 		ClientIp: ctx.ClientIP(),
 		IsBlocked: false,
