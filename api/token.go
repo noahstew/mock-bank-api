@@ -52,7 +52,7 @@ func (server *Server) renewAccessToken(ctx *gin.Context) {
 	}
 
 	if session.RefreshToken != req.RefreshToken {
-		err := fmt.Errorf("mismatched refresh token", session.RefreshToken, req.RefreshToken)
+		err := fmt.Errorf("mismatched refresh token")
 		ctx.JSON(http.StatusUnauthorized, errorResponse(err))
 		return
 	}
